@@ -3246,6 +3246,7 @@ a:focus, a:active, button:focus, button:active {
 
 .button-circle.button-circle-outline-very-peri:hover, .button-circle.button-circle-outline-very-peri:focus {
   background: #6667ab;
+  /* background: red; */
 }
 
 .button-circle.button-circle-gradient-1 {
@@ -11040,6 +11041,15 @@ html {
 
 
 .edits{
-  padding-top: 0% !important;
+  padding-top: 10% !important;
   padding-bottom: 10% !important;
+}
+
+#circlebg{
+  background: #d6a553 !important;
+}
+
+
+#heeroimg{
+  display:fixed !important;
 }
