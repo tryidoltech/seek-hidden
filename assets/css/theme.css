@@ -11027,8 +11027,8 @@ html {
   padding-bottom: 4% !important;
   padding-top: 4% !important;
   margin-top: 7% !important;
-  height: auto;
-  width: auto;
+  height: auto !important;
+  width: auto !important;
 }
 
 /* footer .section {
