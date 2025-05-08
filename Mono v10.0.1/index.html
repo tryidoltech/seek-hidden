@@ -1,691 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-        <meta name="keywords" content="">
-		<title>Mono - Human Resources</title>
-		<!-- Favicon -->
-        <link href="assets/images/favicon.png" rel="shortcut icon">
-		<!-- CSS -->
-		<link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-		<link href="assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
-		<link href="assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet">
-		<link href="assets/plugins/scrollcue/scrollcue.css" rel="stylesheet">
-		<link href="assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
-		<link href="assets/css/theme.css" rel="stylesheet">
-		<link href="assets/css/theme-colors/theme-color-very-peri.css" rel="stylesheet">
-		<!-- Fonts/Icons -->
-		<link href="assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-		<link href="assets/plugins/font-awesome/css/all.css" rel="stylesheet">
-	</head>
-	<body class="theme-color-very-peri preloader-theme" data-preloader="1">
-		
-		<!-- Header -->
-		<div class="header  justify-content-between header-color-dark sticky-autohide"  style="background-color: rgb(177, 176, 246);">
-			<div class="container ">
-			
-			
-				<!-- Logo -->
-<div class="header-logo">
-	<h3 id="logo-text" class="uppercase letter-spacing-1">
-	  <a href="#">mono</a>
-	</h3>
-	<img
-	  id="logo-img"
-	  class="logo-light"
-	  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QAqRXhpZgAASUkqAAgAAAABADEBAgAHAAAAGgAAAAAAAABHb29nbGUAAP/bAIQAAwICBwcHBwYICAgICAYICAgICAgICAgHBgYICAgICAgICAgICAgICAgICAcICggHCAgJCgkICAsNCggNCAgJCAEDBAQGBQYIBQYICAgIBggICAgUCAgICAgICAgICAgICAgUCAgIFAgICAgICAgICAgICAgICAgICAgICAgICAgI/8AAEQgAoACgAwERAAIRAQMRAf/EABwAAQABBQEBAAAAAAAAAAAAAAAGBAUHCAkBA//EAEUQAAEEAQMCAgUHBwkJAAAAAAIAAQMEBQYREgcTFCEICRUiIzM2QWFzssMyUXJ1haGxFjE0UlOV0dLTFxglVXGBkZKT/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAUGBwQIAwL/xAA8EQEAAgEBBAMMBwkBAAAAAAAAAQIDEQQFEiEGMUETMzRRYXFydLGys9EUIlOCkpPBFTI1QlSBodLwI//aAAwDAQACEQMRAD8A6poCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgsWr8pJDEJxvs7mwvuzP5cSf6frZlSule9No3dsuPNs01ra2atJ4qxaOGaXt29utY5pPYMFM+SaX10iszynTnrEfqtGl9STyztGZM4uJPswi3mzeX8zbqs9F+kW3bw276PtFqTTuN7/AFaRWeKtqRHV2aWnl5ndt+xYsOLjpE68URznXlMT8kzWtq89QEBAQEBAQEBAQEBAQEBAQEEX6g/IB9q33DWadPfAcXrFfh5U3unv0+hPvVQHdYZF5p9atprPknSf8LZMRPKY1YT9PTVNqloHNW6lmerYjs49gnrzSQzxsV2qJMMsRCY8hIhfYm3F3Z/J3W4dAslsmyZ5tababRpztNtP/LFOnOZ8ap72rEZaxEafU8Wn81nG7/eQ1P8A8/zX96Xv9dachGRuiPp/auwFwLQ5S3fg5C89LI2JblazG2+4s85SSVyfd37tYoy5MHLuCPBw7xdDesNTUmGoZ6nu0GRi58CdnOvMJPHNAe3lzhmCSInbydx3bdnZ0E7QEBAQ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"
-	  alt="logo"
-	  onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';"
-	  onload="document.getElementById('logo-text').style.display='none';"
-	  style=" mix-blend-mode: overlay;"
-	/>
-  </div>
-  
-				<!-- Menu -->
-				<div class="header-menu ">
-					<ul class="nav">
-						
-						
-						<li class="nav-item bg-transparent">
-							<!-- <a class="nav-link" href="#">Link Only</a> -->
-							 <a class="nav-link " href="#">Home</a>
-						</li>
 
-						<li class="nav-item bg-transparent">
-							<!-- <a class="nav-link" href="#">Link Only</a> -->
-							 <a class="nav-link" href="#">About</a>
-						</li>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Mono - Human Resources</title>
+	<!-- Favicon -->
+	<link href="assets/images/favicon.png" rel="shortcut icon">
+	<!-- CSS -->
+	<link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+	<link href="assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+	<link href="assets/plugins/magnific-popup/magnific-popup.min.css" rel="stylesheet">
+	<link href="assets/plugins/scrollcue/scrollcue.css" rel="stylesheet">
+	<link href="assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="assets/css/theme.css" rel="stylesheet">
+	<link href="assets/css/theme-colors/theme-color-very-peri.css" rel="stylesheet">
+	<!-- Fonts/Icons -->
+	<link href="assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/plugins/font-awesome/css/all.css" rel="stylesheet">
+</head>
 
-						<li class="nav-item bg-transparent">
-							<!-- <a class="nav-link" href="#">Link Only</a> -->
-							 <a class="nav-link" href="#">Contact Us</a>
-						</li>
+<body class="theme-color-very-peri preloader-theme" data-preloader="1">
 
-						<!-- rest saved in notes -->
-					</ul>
-				</div>
-				<!-- Menu Extra -->
+	<!-- Header -->
+	<div class="header  justify-content-between header-color-dark sticky-autohide" style="background-color: black;">
+		<div class="container ">
 
-				<!-- <div class="header-menu-extra">
+
+			<!-- Logo -->
+			<div class="header-logo">
+				<h3 id="logo-text" class="uppercase letter-spacing-1">
+					<a href="#">mono</a>
+				</h3>
+				<img id="logo-img" class="logo-light" src="assets/images/Seekhidden.png" alt="logo"
+					onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';"
+					onload="document.getElementById('logo-text').style.display='none';"
+					style=" mix-blend-mode: overlay;" />
+			</div>
+
+			<!-- Menu -->
+			<div class="header-menu ">
+				<ul class="nav">
+
+
+					<li class="nav-item bg-transparent">
+						<!-- <a class="nav-link" href="#">Link Only</a> -->
+						<a class="nav-link " href="#">Home</a>
+					</li>
+
+					<li class="nav-item bg-transparent">
+						<!-- <a class="nav-link" href="#">Link Only</a> -->
+						<a class="nav-link" href="#about-us">About</a>
+					</li>
+
+					<li class="nav-item bg-transparent">
+						<!-- <a class="nav-link" href="#">Link Only</a> -->
+						<a class="nav-link" href="#contactUs">Contact Us</a>
+					</li>
+
+					<!-- rest saved in notes -->
+				</ul>
+			</div>
+			<!-- Menu Extra -->
+
+			<!-- <div class="header-menu-extra">
 					<ul class="list-inline-sm">
 						<li><a href="#"><i class="bi bi-facebook"></i></a></li>
 						<li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
 						<li><a href="#"><i class="bi bi-linkedin"></i></a></li>
 					</ul>
 				</div> -->
-				
-				<!-- Menu Toggle -->
-				<button class="header-toggle">
-					<span></span>
-				</button>
-			</div><!-- end container -->
-		</div>
-		<!-- end Header -->
 
-		<!-- Hero section -->
-		<div class="owl-carousel owl-nav-overlay owl-dots-overlay" data-owl-nav="true" data-owl-dots="true" data-owl-items="1" data-owl-autoplay="true">
-			<!-- Slider Item 1 -->
-			<div class="bg-image" data-bg-src="assets/images/background.jpg">
-				<div class="section-xl bg-color-theme-05">
-					<div class="container text-center">
-						<div class="row g-4">
-							<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-								<h1 class="display-4 fw-medium line-height-140">Leading Talent Acquisition Specialist</h1>
-								<a class="button button-xl button-radius button-outline-white mt-3 mt-lg-4" href="#">Learn More</a>
-							</div>
-						</div><!-- end row -->
-					</div><!-- end container -->
-				</div>
+			<!-- Menu Toggle -->
+			<button class="header-toggle">
+				<span></span>
+			</button>
+		</div><!-- end container -->
+	</div>
+	<!-- end Header -->
+
+	<!-- Hero section -->
+	<div class="owl-carousel owl-nav-overlay owl-dots-overlay edits" data-owl-nav="true" data-owl-dots="true"
+		data-owl-items="1" data-owl-autoplay="true">
+		<!-- Slider Item 1 -->
+		<div class="bg-image position-relative" style="background-color: transparent;"
+			data-bg-src="assets/images/hero-2.jpg">
+			<!-- Black overlay -->
+			<div
+				style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1;">
 			</div>
-			<!-- Slider Item 2 -->
-			<div class="bg-image" data-bg-src="assets/images/background.jpg">
-				<div class="section-xl bg-color-theme-05">
-					<div class="container text-center">
-						<div class="row g-4">
-							<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-								<h1 class="display-4 fw-medium line-height-140">Leading Talent Acquisition Specialist</h1>
-								<a class="button button-xl button-radius button-outline-white mt-3 mt-lg-4" href="#">Learn More</a>
-							</div>
-						</div><!-- end row -->
-					</div><!-- end container -->
-				</div>
-			</div>
-		</div><!-- end owl-carousel -->
-		<!-- end Hero section -->
-		
-		<!-- Services section -->
-		<div class="section">
-			<div class="container">
-				<div class="row icon-5xl g-4 text-center">
-					<div class="howwework"><h2>How We Work:</h2></div>
-					<!-- Icon text box 1 -->
-					<div class="col-12 col-md-4">
-						<i class="fas fa-users text-color-theme"></i>
-						<h5 class="fw-normal mt-3">Partner Network Distribution:</h5>
-						<p>We collaborate with a vast network of job boards, career sites, and niche industry portals to distribute your listings directly to relevant audiences.</p>
-					</div>
-					<!-- Icon text box 2 -->
-					<div class="col-12 col-md-4">
-						<i class="fas fa-users-cog text-color-theme"></i>
-						<h5 class="fw-normal mt-3">Content Syndication:</h5>
-						<p>Your job ads are syndicated across a variety of high-traffic websites, increasing visibility and driving consistent engagement.</p>
-					</div>
-					<!-- Icon text box 3 -->
-					<div class="col-12 col-md-4">
-						<i class="fas fa-people-arrows text-color-theme"></i>
-						<h5 class="fw-normal mt-3">Targeted Traffic Generation:</h5>
-						<p>Using advanced targeting and segmentation, we connect your listings with the right candidates, reducing time-to-hire.</p>
-					</div>
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div>
-		<!-- end Services section -->
 
-<!--extraaaaaaa-->
-		<!-- About section -->
-		<div class="section pt-0">
-			<div class="container">
-				<div class="row align-items-center g-5">
-					<div class="col-12 col-lg-6">
-						<img class="box-shadow border-radius" src="assets/images/col-1.jpg" alt="">
-					</div>
-					<div class="col-12 col-lg-6">
-						<h3 class="fw-light mb-3">About US</h3>
-						<p>At SeekHidden, we are passionate about connecting talented individuals with their dream careers and helping businesses find the perfect candidates. We believe that the right job can transform lives and drive business success, and that's why we're dedicated to making the recruitment process as seamless and effective as possible.</p>
-						<a class="button button-md button-radius button-theme mt-4" href="#">More About Us</a>
-					</div>
-				</div>
-			</div><!-- end container -->
-		</div>
-		<!-- end About section -->
-<!--extraaaaaaa-->
-
-		<!-- About section -->
-		<div class="section pt-0">
-			<div class="container">
-				<div class="row align-items-center g-5">
-					<div class="col-12 col-lg-6">
-						<img class="box-shadow border-radius" src="assets/images/col-1.jpg" alt="">
-					</div>
-					<div class="col-12 col-lg-6">
-						<h3 class="fw-light mb-3">What we Do:</h3>
-						<p>We specialize in helping employers and recruitment agencies amplify their job listings by leveraging extensive partner networks and syndication channels. Our platform ensures your jobs reach targeted audiences nationwide — and even globally — generating high-quality traffic that converts into applications.</p>
-						<a class="button button-md button-radius button-theme mt-4" href="#">More About Us</a>
-					</div>
-				</div>
-			</div><!-- end container -->
-		</div>
-		<!-- end About section -->
-
-		<!-- How We Work: -->
-		<div class="section">
-			<div class="container">
-				<div class="row icon-5xl g-4 text-center">
-					<div class="howwework"><h2>How We Work:</h2></div>
-					<!-- Icon text box 1 -->
-					<div class="col-12 col-md-4">
-						<i class="fas fa-users text-color-theme"></i>
-						<h5 class="fw-normal mt-3">Partner Network Distribution:</h5>
-						<p>We collaborate with a vast network of job boards, career sites, and niche industry portals to distribute your listings directly to relevant audiences.</p>
-					</div>
-					<!-- Icon text box 2 -->
-					<div class="col-12 col-md-4">
-						<i class="fas fa-users-cog text-color-theme"></i>
-						<h5 class="fw-normal mt-3">Content Syndication:</h5>
-						<p>Your job ads are syndicated across a variety of high-traffic websites, increasing visibility and driving consistent engagement.</p>
-					</div>
-					<!-- Icon text box 3 -->
-					<div class="col-12 col-md-4">
-						<i class="fas fa-people-arrows text-color-theme"></i>
-						<h5 class="fw-normal mt-3">Targeted Traffic Generation:</h5>
-						<p>Using advanced targeting and segmentation, we connect your listings with the right candidates, reducing time-to-hire.</p>
-					</div>
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div>
-		<!-- How We Work: -->
-
-
-		<!-- Testimonial section -->
-		<div class="section pt-0">
-			<div class="container">
-				<div class="owl-carousel" data-owl-items="1" data-owl-dots="false" data-owl-nav="true">
-					<!-- Testimonial box 1 -->
-					<div class="testimonial-box">
-						<img class="mb-3 mb-lg-4" src="assets/images/col-4-square.jpg" alt="">
-						<p class="mb-3">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
-						<h5 class="fw-normal m-0 line-height-140">Emiley Haley</h5>
-						<span class="font-family-poppins font-small uppercase">COO - Mono</span>
-					</div>
-					<!-- Testimonial box 2 -->
-					<div class="testimonial-box">
-						<img class="mb-3 mb-lg-4" src="assets/images/col-4-square.jpg" alt="">
-						<p class="mb-3">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
-						<h5 class="fw-normal m-0 line-height-140">Andrew Palmer</h5>
-						<span class="font-family-poppins font-small uppercase">CMO - Mono</span>
-					</div>
-					<!-- Testimonial box 3 -->
-					<div class="testimonial-box">
-						<img class="mb-3 mb-lg-4" src="assets/images/col-4-square.jpg" alt="">
-						<p class="mb-3">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
-						<h5 class="fw-normal m-0 line-height-140">Anna Mullen</h5>
-						<span class="font-family-poppins font-small uppercase">CFO - Mono</span>
-					</div>
-				</div><!-- end owl-carousel -->
-			</div><!-- end container -->
-		</div>
-		<!-- end Testimonial section -->
-
-		<!-- Facts/Counter section -->
-		<div class="section-lg bg-image parallax" data-bg-src="assets/images/background.jpg">
-			<div class="bg-color-theme-05">
+			<!-- Content with higher z-index -->
+			<div class="section-xl bg-color-theme-05 position-relative" style="z-index: 2;">
 				<div class="container text-center">
 					<div class="row g-4">
-						<div class="col-12 col-sm-6 col-lg-3">
-							<h1 class="display-4 fw-light"><span class="counter">100</span>+</h1>
-							<p>Counter</p>
+						<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+							<h1 class="display-4 fw-medium line-height-140 text-white">Connect with Top Talent,
+								Instantly</h1>
+							<p class="text-white">At SeekHidden, we go beyond traditional job posting by syndicating
+								your listings across a vast network of niche portals, career sites, and high-traffic
+								platforms...</p>
+							<a class="button button-xl button-radius button-outline-white mt-3 mt-lg-4"
+								href="#about-us">Learn More</a>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-3">
-							<h1 class="display-4 fw-light"><span class="counter">100</span>+</h1>
-							<p>Counter</p>
-						</div>
-						<div class="col-12 col-sm-6 col-lg-3">
-							<h1 class="display-4 fw-light"><span class="counter">100</span>+</h1>
-							<p>Counter</p>
-						</div>
-						<div class="col-12 col-sm-6 col-lg-3">
-							<h1 class="display-4 fw-light"><span class="counter">100</span>+</h1>
-							<p>Counter</p>
-						</div>
-					</div><!-- end row -->
-				</div><!-- end container -->
+					</div>
+				</div>
 			</div>
 		</div>
-		<!-- end Facts/Counter section -->
 
-		<!-- Clients section -->
-		<div class="section">
-			<div class="container">
-				<div class="mb-5">
+		<!-- Slider Item 2 -->
+
+		<div class="bg-image position-relative" style="background-color: transparent;"
+			data-bg-src="assets/images/hero-2.jpg">
+			<!-- Black overlay -->
+			<div
+				style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1;">
+			</div>
+
+			<!-- Content with higher z-index -->
+			<div class="section-xl bg-color-theme-05 position-relative" style="z-index: 2;">
+				<div class="container text-center">
 					<div class="row g-4">
-						<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
-							<h2 class="fw-normal">Companies Recruiting with Mono</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus in hac</p>
+						<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+							<h1 class="display-4 fw-medium line-height-140 text-white">Amplify Your Hiring Reach, Globally</h1>
+							<p class="text-white">Leverage our global syndication and smart targeting tools to make sure your job ads reach
+								the widest and most relevant audience possible. From niche job boards to high-traffic
+								career platforms, SeekHidden ensures your listings get the visibility they deserve.</p>
+							<a class="button button-xl button-radius button-outline-white mt-3 mt-lg-4"
+								href="#about-us">Learn More</a>
 						</div>
-					</div><!-- end row -->
+					</div>
 				</div>
-				<div class="owl-carousel" data-owl-nav="true" data-owl-dots="false" data-owl-margin="50" data-owl-autoplay="true" data-owl-xs="1" data-owl-sm="2" data-owl-md="3" data-owl-lg="4" data-owl-xl="5">
-					<!-- Client box 1 -->
-					<div class="client-box">
-						<a href="#">
-							<img src="assets/images/col-5.jpg" alt="">
-						</a>
-					</div>
-					<!-- Client box 2 -->
-					<div class="client-box">
-						<a href="#">
-							<img src="assets/images/col-5.jpg" alt="">
-						</a>
-					</div>
-					<!-- Client box 3 -->
-					<div class="client-box">
-						<a href="#">
-							<img src="assets/images/col-5.jpg" alt="">
-						</a>
-					</div>
-					<!-- Client box 4 -->
-					<div class="client-box">
-						<a href="#">
-							<img src="assets/images/col-5.jpg" alt="">
-						</a>
-					</div>
-					<!-- Client box 5 -->
-					<div class="client-box">
-						<a href="#">
-							<img src="assets/images/col-5.jpg" alt="">
-						</a>
-					</div>
-					<!-- Client box 6 -->
-					<div class="client-box">
-						<a href="#">
-							<img src="assets/images/col-5.jpg" alt="">
-						</a>
-					</div>
-					<!-- Client box 7 -->
-					<div class="client-box">
-						<a href="#">
-							<img src="assets/images/col-5.jpg" alt="">
-						</a>
-					</div>
-				</div><!-- end owl-carousel -->
-			</div><!-- end container -->
-		</div>
-		<!-- end Clients section -->
-
-		<!-- Careers section -->
-		<div class="section bg-gray-lighter">
-			<div class="container">
-				<div class="mb-5">
-					<div class="row g-4">
-						<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
-							<h2 class="fw-normal text-color-theme">Recent Job Listings</h2>
-						</div>
-					</div><!-- end row -->
-				</div>
-				<div class="masonry column-3 spacing-2">
-					<!-- 1 -->
-					<div class="masonry-item">
-						<div class="bg-white border-radius box-shadow p-4">
-							<h5 class="fw-normal m-0">Web Developer</h5>
-							<div class="mb-2 mb-lg-3 text-dark-03">
-								<p><i class="fas fa-map-marker-alt me-2"></i><span>Remote</span></p>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							<div class="text-end mt-2 mt-lg-3">
-								<a class="button-text-1" href="#">Apply Now</a>
-							</div>
-						</div>
-					</div>
-					<!-- 2 -->
-					<div class="masonry-item">
-						<div class="bg-white border-radius box-shadow p-4">
-							<h5 class="fw-normal m-0">Project Manager</h5>
-							<div class="mb-2 mb-lg-3 text-dark-03">
-								<p><i class="fas fa-map-marker-alt me-2"></i><span>Melbourne, AUS</span></p>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-							<div class="text-end mt-2 mt-lg-3">
-								<a class="button-text-1" href="#">Apply Now</a>
-							</div>
-						</div>
-					</div>
-					<!-- 3 -->
-					<div class="masonry-item">
-						<div class="bg-white border-radius box-shadow p-4">
-							<h5 class="fw-normal m-0">Graphic Designer</h5>
-							<div class="mb-2 mb-lg-3 text-dark-03">
-								<p><i class="fas fa-map-marker-alt me-2"></i><span>Remote</span></p>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							<div class="text-end mt-2 mt-lg-3">
-								<a class="button-text-1" href="#">Apply Now</a>
-							</div>
-						</div>
-					</div>
-					<!-- 4 -->
-					<div class="masonry-item">
-						<div class="bg-white border-radius box-shadow p-4">
-							<h5 class="fw-normal m-0">Creative Director</h5>
-							<div class="mb-2 mb-lg-3 text-dark-03">
-								<p><i class="fas fa-map-marker-alt me-2"></i><span>Melbourne, AUS</span></p>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-							<div class="text-end mt-2 mt-lg-3">
-								<a class="button-text-1" href="#">Apply Now</a>
-							</div>
-						</div>
-					</div>
-					<!-- 5 -->
-					<div class="masonry-item">
-						<div class="bg-white border-radius box-shadow p-4">
-							<h5 class="fw-normal m-0">Marketing Specialist</h5>
-							<div class="mb-2 mb-lg-3 text-dark-03">
-								<p><i class="fas fa-map-marker-alt me-2"></i><span>Melbourne, AUS</span></p>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-							<div class="text-end mt-2 mt-lg-3">
-								<a class="button-text-1" href="#">Apply Now</a>
-							</div>
-						</div>
-					</div>
-					<!-- 6 -->
-					<div class="masonry-item">
-						<div class="bg-white border-radius box-shadow p-4">
-							<h5 class="fw-normal m-0">Photographer</h5>
-							<div class="mb-2 mb-lg-3 text-dark-03">
-								<p><i class="fas fa-map-marker-alt me-2"></i><span>Melbourne, AUS</span></p>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-							<div class="text-end mt-2 mt-lg-3">
-								<a class="button-text-1" href="#">Apply Now</a>
-							</div>
-						</div>
-					</div>
-				</div><!-- end row -->
-				<div class="mt-5 text-center">
-					<a class="button button-md button-radius button-theme mt-4" href="#">View All Listings</a>
-				</div>
-			</div><!-- end container -->
-		</div>
-		<!-- end Careers section -->
-
-		<!-- Team section -->
-		<div class="section">
-			<div class="container">
-				<div class="row g-4">
-					<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 text-center">
-						<h2 class="fw-normal">Meet Our Team</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis blandit turpis cursus</p>
-					</div>
-				</div><!-- end row -->
-				<div class="row g-3 gy-4 team-wrapper border-radius mt-5">
-					<!-- Team box 1 -->
-					<div class="col-12 col-sm-6 col-lg-3 team-box">
-						<div class="team-img">
-							<img src="assets/images/col-2-square.jpg" alt=""><!-- image source -->
-							<!-- social links -->
-							<div>
-								<ul>
-									<li>
-										<a href="#"><i class="bi bi-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-twitter-x"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-pinterest"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="mb-2">
-							<h5 class="fw-normal m-0">Brenda Johnson</h5>
-							<span class="font-family-poppins font-small uppercase">Recruiter</span>
-						</div>
-					</div>
-					<!-- Team box 2 -->
-					<div class="col-12 col-sm-6 col-lg-3 team-box">
-						<div class="team-img">
-							<img src="assets/images/col-2-square.jpg" alt=""><!-- image source -->
-							<!-- social links -->
-							<div>
-								<ul>
-									<li>
-										<a href="#"><i class="bi bi-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-twitter-x"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-pinterest"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="mb-2">
-							<h5 class="fw-normal m-0">Brenda Johnson</h5>
-							<span class="font-family-poppins font-small uppercase">Recruiter</span>
-						</div>
-					</div>
-					<!-- Team box 3 -->
-					<div class="col-12 col-sm-6 col-lg-3 team-box">
-						<div class="team-img">
-							<img src="assets/images/col-2-square.jpg" alt=""><!-- image source -->
-							<!-- social links -->
-							<div>
-								<ul>
-									<li>
-										<a href="#"><i class="bi bi-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-twitter-x"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-pinterest"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="mb-2">
-							<h5 class="fw-normal m-0">Brenda Johnson</h5>
-							<span class="font-family-poppins font-small uppercase">Recruiter</span>
-						</div>
-					</div>
-					<!-- Team box 4 -->
-					<div class="col-12 col-sm-6 col-lg-3 team-box">
-						<div class="team-img">
-							<img src="assets/images/col-2-square.jpg" alt=""><!-- image source -->
-							<!-- social links -->
-							<div>
-								<ul>
-									<li>
-										<a href="#"><i class="bi bi-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-twitter-x"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-pinterest"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="mb-2">
-							<h5 class="fw-normal m-0">Brenda Johnson</h5>
-							<span class="font-family-poppins font-small uppercase">Recruiter</span>
-						</div>
-					</div>
-					<!-- Team box 5 -->
-					<div class="col-12 col-sm-6 col-lg-3 team-box">
-						<div class="team-img">
-							<img src="assets/images/col-2-square.jpg" alt=""><!-- image source -->
-							<!-- social links -->
-							<div>
-								<ul>
-									<li>
-										<a href="#"><i class="bi bi-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-twitter-x"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-pinterest"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="mb-2">
-							<h5 class="fw-normal m-0">Brenda Johnson</h5>
-							<span class="font-family-poppins font-small uppercase">Recruiter</span>
-						</div>
-					</div>
-					<!-- Team box 6 -->
-					<div class="col-12 col-sm-6 col-lg-3 team-box">
-						<div class="team-img">
-							<img src="assets/images/col-2-square.jpg" alt=""><!-- image source -->
-							<!-- social links -->
-							<div>
-								<ul>
-									<li>
-										<a href="#"><i class="bi bi-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-twitter-x"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-pinterest"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="mb-2">
-							<h5 class="fw-normal m-0">Brenda Johnson</h5>
-							<span class="font-family-poppins font-small uppercase">Recruiter</span>
-						</div>
-					</div>
-					<!-- Team box 7 -->
-					<div class="col-12 col-sm-6 col-lg-3 team-box">
-						<div class="team-img">
-							<img src="assets/images/col-2-square.jpg" alt=""><!-- image source -->
-							<!-- social links -->
-							<div>
-								<ul>
-									<li>
-										<a href="#"><i class="bi bi-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-twitter-x"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-pinterest"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="mb-2">
-							<h5 class="fw-normal m-0">Brenda Johnson</h5>
-							<span class="font-family-poppins font-small uppercase">Recruiter</span>
-						</div>
-					</div>
-					<!-- Team box 8 -->
-					<div class="col-12 col-sm-6 col-lg-3 team-box">
-						<div class="team-img">
-							<img src="assets/images/col-2-square.jpg" alt=""><!-- image source -->
-							<!-- social links -->
-							<div>
-								<ul>
-									<li>
-										<a href="#"><i class="bi bi-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-twitter-x"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="bi bi-pinterest"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="mb-2">
-							<h5 class="fw-normal m-0">Brenda Johnson</h5>
-							<span class="font-family-poppins font-small uppercase">Recruiter</span>
-						</div>
-					</div>
-				</div><!-- end row -->
-			</div><!-- end container -->
-		</div>
-		<!-- end Team section -->
-
-		<!-- Parallax section -->
-		<div class="section-xl bg-image parallax" data-bg-src="assets/images/background.jpg">
-			<div class="bg-color-theme-05">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12 col-lg-8 col-xl-7">
-							<h1 class="fw-light">Feel free to ask any questions</h1>
-							<p class="font-large">Etiam sit amet orci eget eros faucibus tincidunt.</p>
-						</div>
-						<div class="col-12 col-lg-4 col-xl-5 text-lg-end">
-							<a class="button button-xl button-radius button-reveal-right-outline-white" href="#"><i class="bi bi-arrow-right"></i><span>Get In Touch</span></a>
-						</div>
-					</div><!-- end row -->
-				</div><!-- end container -->
 			</div>
 		</div>
-		<!-- end Parallax section -->
+	</div>
+	<!-- end Hero section -->
 
-		<footer>
-			<div class="section bg-dark">
-				<div class="container">
-					<div class="row g-4 align-items-center">
-						<div class="col-12 col-md-6 text-center text-md-start">
-							<h2 class="uppercase letter-spacing-1">mono</h2>
-							<ul class="list-inline-dash mt-3">
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">Careers</a></li>
-								<li><a href="#">Clients</a></li>
-							</ul>
-							<p class="mt-2">&copy; 2025 FlaTheme, All Rights Reserved.</p>
-						</div>
-						<div class="col-12 col-md-6 text-center text-md-end">
-							<ul class="list-unstyled">
-								<li>121 King St, Melbourne VIC 3000</li>
-								<li>contact@example.com</li>
-							</ul>
-							<ul class="list-inline-sm mt-3 mt-lg-4">
-								<li><a class="button-circle button-circle-sm button-circle-social-facebook" href="#"><i class="bi bi-facebook"></i></a></li>
-								<li><a class="button-circle button-circle-sm button-circle-social-twitter" href="#"><i class="bi bi-twitter-x"></i></a></li>
-								<li><a class="button-circle button-circle-sm button-circle-social-instagram" href="#"><i class="bi bi-instagram"></i></a></li>
-							</ul>
-						</div>
-					</div><!-- end row -->
-				</div><!-- end container -->
+	<!-- Services section -->
+
+	<!-- end Services section -->
+
+
+	<!-- About section -->
+	<div class=" edits section pt-[30px]" id="about-us">
+		<div class="container fade-in">
+			<div class="row align-items-center g-5">
+				<div class="col-12 col-lg-6">
+					<img class="box-shadow border-radius interactive-img" src="assets/images/about-us.jpg"
+						alt="About Us Image">
+				</div>
+				<div class="col-12 col-lg-6 text-content">
+					<h3 class="fw-light mb-3">About US</h3>
+					<p>
+						At SeekHidden, we are passionate about connecting talented individuals with their dream careers
+						and helping businesses find the perfect candidates. We believe that the right job can transform
+						lives and drive business success, and that's why we're dedicated to making the recruitment
+						process as seamless and effective as possible.
+					</p>
+					<a class="button button-md button-radius button-theme mt-4 interactive-btn" id="aboutbutton"
+						href="#howwedo">More About Us</a>
+				</div>
 			</div>
-		</footer>
-
-		<!-- Scroll to top button -->
-		<div class="scrolltotop icon-lg">
-			<a class="button-circle button-circle-md button-circle-theme" href="#"><i class="bi bi-arrow-up-short"></i></a>
 		</div>
-		<!-- end Scroll to top button -->
+	</div>
 
-		<!-- ***** JAVASCRIPTS ***** -->
-		<script src="assets/plugins/jquery.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-		<script src="assets/plugins/plugins.js"></script>
-		<script src="assets/js/functions.js"></script>
-	</body>
+	<!-- end About section -->
+
+
+
+	<!--How We Do ? -->
+	<div class=" edits section" id="howwedo">
+		<div class="container">
+			<div class="text-center howwework">
+				<h2>How We Do ?</h2>
+			</div>
+			<div class="row icon-5xl g-4 text-center">
+				<!-- Box 1 -->
+				<div class="col-12 col-md-4 d-flex">
+					<div class="interactive-box w-100">
+						<i style="color:#d6a553" class="fas fa-users text-color-theme"></i>
+						<h5 class="fw-normal mt-3">Helping employers & agencies amplify job listings</h5>
+						<p>We partner with top platforms to boost job visibility, ensuring your listings reach active
+							and passive candidates alike.</p>
+					</div>
+				</div>
+				<!-- Box 2 -->
+				<div class="col-12 col-md-4 d-flex">
+					<div class="interactive-box w-100">
+						<i class=" fas fa-users-cog text-color-theme" style="color:#d6a553"></i>
+						<h5 class="fw-normal mt-3">Nationwide & global job syndication</h5>
+						<p>Your openings are published across a network of local and international job boards for
+							maximum exposure.</p>
+					</div>
+				</div>
+				<!-- Box 3 -->
+				<div class="col-12 col-md-4 d-flex">
+					<div class="interactive-box w-100">
+						<i class="fas fa-people-arrows text-color-theme" style="color:#d6a553"></i>
+						<h5 class="fw-normal mt-3">Generating high-quality traffic & applications</h5>
+						<p>Our data-driven strategies attract qualified candidates to your listings, increasing
+							conversion and reducing hiring time.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- How We Do ? -->
+
+
+
+	<!-- How We Work: -->
+	<div class=" edits section">
+		<div class="container">
+			<div class="text-center howwework">
+				<h2>How We Work:</h2>
+			</div>
+			<div class="row icon-5xl g-4 text-center">
+				<!-- Box 1 -->
+				<div class="col-12 col-md-4 d-flex">
+					<div class="interactive-box w-100">
+						<i style="color:#d6a553" class="fas fa-users text-color-theme"></i>
+						<h5 class="fw-normal mt-3">Partner Network Distribution:</h5>
+						<p>We collaborate with a vast network of job boards, career sites, and niche industry portals to
+							distribute your listings directly to relevant audiences.</p>
+					</div>
+				</div>
+				<!-- Box 2 -->
+				<div class="col-12 col-md-4 d-flex">
+					<div class="interactive-box w-100">
+						<i style="color:#d6a553" class="fas fa-users-cog text-color-theme"></i>
+						<h5 class="fw-normal mt-3">Content Syndication:</h5>
+						<p>Your job ads are syndicated across a variety of high-traffic websites, increasing visibility
+							and driving consistent engagement.</p>
+					</div>
+				</div>
+				<!-- Box 3 -->
+				<div class="col-12 col-md-4 d-flex">
+					<div class="interactive-box w-100">
+						<i style="color:#d6a553" class="fas fa-people-arrows text-color-theme"></i>
+						<h5 class="fw-normal mt-3">Targeted Traffic Generation:</h5>
+						<p>Using advanced targeting and segmentation, we connect your listings with the right
+							candidates, reducing time-to-hire.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- How We Work: -->
+
+
+	<!-- Why Choose Us?: -->
+	<div class=" edits section">
+		<div class="container">
+			<div class="text-center mb-5">
+				<h2>Why Choose Us?</h2>
+				<p>We specialize in helping employers and recruitment agencies amplify their job listings by leveraging
+					extensive partner networks and syndication channels. Our platform ensures your jobs reach targeted
+					audiences nationwide — and even globally — generating high-quality traffic that converts into
+					applications.</p>
+			</div>
+			<div class="row text-center g-4">
+				<div class="col-12 col-md-3">
+					<div class="interactive-box">
+						<i style="color:#d6a553" class="fas fa-users text-color-theme"></i>
+						<h5 class="fw-normal mt-3">Extensive Partner Network</h5>
+						<p>Collaborate with a vast network of industry leaders and innovators.</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<div class="interactive-box">
+						<i style="color:#d6a553" class="fas fa-users-cog text-color-theme"></i>
+						<h5 class="fw-normal mt-3">Proven Traffic Generation</h5>
+						<p>Boost visibility with our time-tested digital marketing strategies.</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<div class="interactive-box">
+						<i style="color:#d6a553" class="fas fa-people-arrows text-color-theme"></i>
+						<h5 class="fw-normal mt-3">Cost-Effective Solutions</h5>
+						<p>Maximize ROI with solutions that are both impactful and affordable.</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<div class="interactive-box">
+						<i style="color:#d6a553" class="fas fa-users text-color-theme"></i>
+						<h5 class="fw-normal mt-3">Customizable Campaigns</h5>
+						<p>Tailor strategies to meet your unique business goals and audience.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Why Choose Us?: -->
+
+
+
+	<!-- Testimonial section -->
+
+	<!--if you want code take it from home pages--- human-resources.html -->
+
+	<!-- end Testimonial section -->
+
+
+
+	<!-- Facts/Counter section -->
+
+	<!-- end Facts/Counter section -->
+
+
+
+	<!-- Clients section -->
+
+	<!-- end Clients section -->
+
+
+
+	<!-- Careers section -->
+
+	<!-- end Careers section -->
+
+
+
+	<!-- Team section -->
+
+	<!-- end Team section -->
+
+	<!-- Parallax section -->
+	<!-- code changed to contact us -->
+
+	<div class="section-xl bg-image parallax bg-image-dark" data-bg-src="assets/images/hero-1.jpg" id="contactUs">
+
+		<div class="bg-color-theme-05">
+			<div class="container">
+				<div class="row align-items-center g-5">
+					<!-- Left Column: Heading & Paragraph -->
+					<div class="col-12 col-lg-6">
+						<h1 class="fw-light text-white">Feel free to ask any questions</h1>
+						<p>We're here to make your hiring and job-seeking journey seamless.
+							Whether you have a question, need support, or want to collaborate, we're just a message away.
+							At SeekHidden, your success is our priority.
+							Feel free to reach out — we’re always ready to help.</p>
+					</div>
+
+					<!-- Right Column: Contact Us Form -->
+					<div class="col-12 col-lg-6" id="contactUs">
+						<div class="contact">
+
+						</div>
+						<div class="contact-form">
+							<form method="post" id="contactform">
+								<div class="row gx-3 gy-3">
+									<div class="col-12 col-sm-6">
+										<input type="text" id="name" name="name" placeholder="Name" required
+											class="form-control" />
+									</div>
+									<div class="col-12 col-sm-6">
+										<input type="email" id="email" name="email" placeholder="E-Mail" required
+											class="form-control" />
+									</div>
+								</div>
+								<div class="row gx-3 gy-3">
+									<div class="col-12 col-sm-6">
+										<input type="text" id="name" name="name" placeholder="Subject" required
+											class="form-control" />
+									</div>
+									<div class="col-12 col-sm-6">
+										<input type="number" id="email" name="email" placeholder="Enter Number" required
+											class="form-control" />
+									</div>
+								</div>
+								<div class="mt-3">
+									<textarea name="message" id="message" placeholder="Message" rows="4"
+										class="form-control"></textarea>
+								</div>
+								<div class="mt-4">
+									<button class="button button-lg button-rounded button-outline-light"
+										type="submit">Send Message</button>
+								</div>
+							</form>
+							<div class="submit-result mt-3 text-white">
+								<span id="success" style="display: none;">Thank you! Your Message has been sent.</span>
+								<span id="error" style="display: none;">Something went wrong, Please try again!</span>
+							</div>
+						</div>
+					</div>
+					<!-- End Right Column -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end Parallax section -->
+
+	<footer>
+		<div class="section bg-dark">
+			<div class="container">
+				<div class="row g-4 align-items-center">
+					<div class="col-12 col-md-6 text-center text-md-start">
+						<h2 class="uppercase letter-spacing-1">mono</h2>
+						<ul class="list-inline-dash mt-3">
+							<li><a href="#">Home</a></li>
+							<li><a href="#about-us">About</a></li>
+							<li><a href="#contactUs">Contact Us</a></li>
+						</ul>
+						<p class="mt-2">&copy; 2025 SeekHidden, All Rights Reserved.</p>
+					</div>
+					<div class="col-12 col-md-6 text-center text-md-end">
+						<ul class="list-unstyled">
+							<li>Flexi Desk, Shams Business Center,Sharjah
+								<br/> Media City Free Zone,Al Messaned, Sharjah, UAE
+							</li>
+							<li>contact@seekhidden.com</li>
+						</ul>
+						<ul class="list-inline-sm mt-3 mt-lg-4">
+							<li><a class="button-circle button-circle-sm button-circle-social-facebook" href="#"><i
+										class="bi bi-facebook"></i></a></li>
+							<li><a class="button-circle button-circle-sm button-circle-social-twitter" href="#"><i
+										class="bi bi-twitter-x"></i></a></li>
+							<li><a class="button-circle button-circle-sm button-circle-social-instagram" href="#"><i
+										class="bi bi-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div>
+	</footer>
+
+	<!-- Scroll to top button -->
+	<div class="scrolltotop icon-lg">
+		<a class="button-circle button-circle-md button-circle-theme" href="#"><i class="bi bi-arrow-up-short"></i></a>
+	</div>
+	<!-- end Scroll to top button -->
+
+	<!-- ***** JAVASCRIPTS ***** -->
+	<script src="assets/plugins/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+	<script src="assets/plugins/plugins.js"></script>
+	<script src="assets/js/functions.js"></script>
+</body>
+
 </html>
