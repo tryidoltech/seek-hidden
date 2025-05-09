@@ -35,7 +35,7 @@
 				<h3 id="logo-text" class="uppercase letter-spacing-1">
 					<a href="#">mono</a>
 				</h3>
-				<img id="logo-img" class="logo-light" src="assets/images/Seekhidden.png" alt="logo"
+				<img id="logo-img" class="logo-light" src="assets/images/Seek_HiddenHB-removebg.png" alt="logo"
 					onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';"
 					onload="document.getElementById('logo-text').style.display='none';"
 					style=" mix-blend-mode: overlay;" />
@@ -98,10 +98,8 @@
 				<div class="container text-center">
 					<div class="row g-4">
 						<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-							<h1 class="display-4 fw-medium line-height-140 text-white">Connect with Top Talent,
-								Instantly</h1>
-							<p class="text-white">At SeekHidden, we go beyond traditional job posting by syndicating
-								your listings across a vast network of niche portals, career sites...</p>
+							<h1 class="display-4 fw-medium line-height-140 text-white">Where Your Job Openings Find Their Match.</h1>
+							<p class="text-white">We go beyond the obvious to find the hidden pathways to your success in the evolving job landscape....</p>
 							<a class="button button-xl button-radius button-outline-white mt-3 mt-lg-4"
 								href="#about-us">Learn More</a>
 						</div>
@@ -125,11 +123,8 @@
 				<div class="container text-center">
 					<div class="row g-4">
 						<div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-							<h1 class="display-4 fw-medium line-height-140 text-white">Amplify Your Hiring Reach,
-								Globally</h1>
-							<p class="text-white">Leverage our global syndication and smart targeting tools to make sure
-								your job ads reach
-								the widest and most relevant audience possible.</p>
+							<h1 class="display-4 fw-medium line-height-140 text-white">Smart Distribution , Seamless Hiring</h1>
+							<p class="text-white">Leverage our global syndication and smart targeting tools to make sure your job ads reach the widest and most relevant audience possible.</p>
 							<a class="button button-xl button-radius button-outline-white mt-3 mt-lg-4"
 								href="#about-us">Learn More</a>
 						</div>
@@ -350,46 +345,39 @@
 
 					<!-- Right Column: Contact Us Form -->
 					<div class="col-12 col-lg-6" id="contactUs">
-						<div class="contact">
-
-						</div>
+						<div class="contact"></div>
 						<div class="contact-form">
-							<form method="post" id="contactform">
-								<div class="row gx-3 gy-3">
-									<div class="col-12 col-sm-6">
-										<input type="text" id="name" name="name" placeholder="Name" required
-											class="form-control" />
-									</div>
-									<div class="col-12 col-sm-6">
-										<input type="email" id="email" name="email" placeholder="E-Mail" required
-											class="form-control" />
-									</div>
-								</div>
-								<div class="row gx-3 gy-3">
-									<div class="col-12 col-sm-6">
-										<input type="text" id="name" name="name" placeholder="Subject" required
-											class="form-control" />
-									</div>
-									<div class="col-12 col-sm-6">
-										<input type="number" id="email" name="email" placeholder="Enter Number" required
-											class="form-control" />
-									</div>
-								</div>
-								<div class="mt-3">
-									<textarea name="message" id="message" placeholder="Message" rows="4"
-										class="form-control"></textarea>
-								</div>
-								<div class="mt-4">
-									<button class="button button-lg button-rounded button-outline-light"
-										type="submit">Send Message</button>
-								</div>
-							</form>
-							<div class="submit-result mt-3 text-white">
-								<span id="success" style="display: none;">Thank you! Your Message has been sent.</span>
-								<span id="error" style="display: none;">Something went wrong, Please try again!</span>
+						  <form method="post" id="contactformHB">
+							<div class="row gx-3 gy-3">
+							  <div class="col-12 col-sm-6">
+								<input type="text" id="firstName" name="firstName" placeholder="First Name" required class="form-control" />
+							  </div>
+							  <div class="col-12 col-sm-6">
+								<input type="text" id="lastName" name="lastName" placeholder="Last Name" required class="form-control" />
+							  </div>
 							</div>
+							<div class="row gx-3 gy-3 mt-2">
+							  <div class="col-12 col-sm-6">
+								<input type="email" id="email" name="email" placeholder="Email" required class="form-control" />
+							  </div>
+							  <div class="col-12 col-sm-6">
+								<input type="tel" id="contactNumber" name="contactNumber" placeholder="Contact Number" required class="form-control" />
+							  </div>
+							</div>
+							<div class="mt-3">
+							  <textarea name="message" id="message" placeholder="Message" rows="4" class="form-control" required></textarea>
+							</div>
+							<div class="mt-4">
+							  <button class="button button-lg button-rounded button-outline-light" type="submit">Send Message</button>
+							</div>
+						  </form>
+						  <div class="submit-result mt-3 text-white">
+							<span id="success" style="display: none;">Thank you! Your Message has been sent.</span>
+							<span id="error" style="display: none;">Something went wrong, Please try again!</span>
+						  </div>
 						</div>
-					</div>
+					  </div>
+					  
 					<!-- End Right Column -->
 				</div>
 			</div>
@@ -418,6 +406,12 @@
 							<li>contact@seekhidden.com</li>
 						</ul>
 						<ul class="list-inline-sm mt-3 mt-lg-4">
+							<li>
+								<a class="button-circle button-circle-sm button-circle-social-linkedin" href="#">
+								  <i class="bi bi-linkedin"></i>
+								</a>
+							  </li>
+							  
 							<li><a class="button-circle button-circle-sm button-circle-social-facebook" href="#"><i
 										class="bi bi-facebook"></i></a></li>
 							<li><a class="button-circle button-circle-sm button-circle-social-twitter" href="#"><i
@@ -443,6 +437,9 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 	<script src="assets/plugins/plugins.js"></script>
 	<script src="assets/js/functions.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script src="assets/js/mail.js"></script>
+
 </body>
 
 </html>
