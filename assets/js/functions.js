@@ -380,57 +380,168 @@ if (pGrid) {
 /*===============================================
   9. Slider
 ===============================================*/
+// var owlSlider = document.querySelector(".owl-carousel");
+
+// if (owlSlider) {
+//   $(".owl-carousel").each( function() {
+//     var $carousel = $(this);
+
+//     var $defaults = {
+//       rewind: true,
+//       navText: ["<i class='bi bi-arrow-left-short'></i>","<i class='bi bi-arrow-right-short'></i>"],
+//       autoHeight: true, 
+//       autoplayTimeout: 4000, 
+//       autoplaySpeed: 400, 
+//       autoplayHoverPause: true, 
+//       navSpeed: 300, 
+//       dotsSpeed: 300
+//     }
+
+//     var $options = {
+//       items: $carousel.data("owl-items"),
+//       margin: $carousel.data("owl-margin"),
+//       loop: $carousel.data("owl-loop"),
+//       center: $carousel.data("owl-center"),
+//       nav: $carousel.data("owl-nav"),
+//       rewind: $carousel.data("owl-rewind"),
+//       dots: $carousel.data("owl-dots"),
+//       autoplay: $carousel.data("owl-autoplay")
+//     }
+
+//     var $responsive = {
+//       responsive: {
+//         0 : {
+//           items: $carousel.data("owl-xs")
+//         },
+//         576 : {
+//           items: $carousel.data("owl-sm")
+//         },
+//         768 : {
+//           items: $carousel.data("owl-md")
+//         },
+//         992 : {
+//           items: $carousel.data("owl-lg")
+//         },
+//         1200 : {
+//           items: $carousel.data("owl-xl")
+//         }
+//       }
+//     }
+
+//     $carousel.owlCarousel( $.extend( $defaults, $options, $responsive) );
+//   });
+// }
+
+// var owlSlider = document.querySelector(".owl-carousel");
+
+// if (owlSlider) {
+//   $(".owl-carousel").each(function () {
+//     var $carousel = $(this);
+//     var totalSlides = $carousel.find(".owl-item").length;
+//     var direction = "forward"; // forward = right to left, backward = left to right
+//     var autoplayInterval;
+//     var slideDuration = 4000;
+
+//     var $defaults = {
+//       loop: false,
+//       rewind: false,
+//       navText: ["<i class='bi bi-arrow-left-short'></i>", "<i class='bi bi-arrow-right-short'></i>"],
+//       autoHeight: true,
+//       autoplay: false, // We’ll handle autoplay manually
+//       autoplayTimeout: slideDuration,
+//       autoplaySpeed: 600,
+//       autoplayHoverPause: true,
+//       navSpeed: 300,
+//       dotsSpeed: 300,
+//     };
+
+//     var $options = {
+//       items: $carousel.data("owl-items") || 1,
+//       margin: $carousel.data("owl-margin"),
+//       center: $carousel.data("owl-center"),
+//       nav: $carousel.data("owl-nav"),
+//       dots: $carousel.data("owl-dots")
+//     };
+
+//     var $responsive = {
+//       responsive: {
+//         0: { items: $carousel.data("owl-xs") || 1 },
+//         576: { items: $carousel.data("owl-sm") || 1 },
+//         768: { items: $carousel.data("owl-md") || 1 },
+//         992: { items: $carousel.data("owl-lg") || 1 },
+//         1200: { items: $carousel.data("owl-xl") || 1 }
+//       }
+//     };
+
+//     $carousel.owlCarousel($.extend($defaults, $options, $responsive));
+
+//     function startCustomAutoplay() {
+//       autoplayInterval = setInterval(() => {
+//         var currentIndex = $carousel.find(".owl-item.active").index();
+
+//         if (direction === "forward") {
+//           if (currentIndex < totalSlides - 1) {
+//             $carousel.trigger("next.owl.carousel");
+//           } else {
+//             direction = "backward"; // switch direction
+//             $carousel.trigger("prev.owl.carousel");
+//           }
+//         } else {
+//           if (currentIndex > 0) {
+//             $carousel.trigger("prev.owl.carousel");
+//           } else {
+//             direction = "forward"; // switch back to forward
+//             $carousel.trigger("next.owl.carousel");
+//           }
+//         }
+//       }, slideDuration);
+//     }
+
+//     startCustomAutoplay();
+//   });
+// }
 var owlSlider = document.querySelector(".owl-carousel");
 
 if (owlSlider) {
-  $(".owl-carousel").each( function() {
+  $(".owl-carousel").each(function () {
     var $carousel = $(this);
 
     var $defaults = {
-      rewind: true,
-      navText: ["<i class='bi bi-arrow-left-short'></i>","<i class='bi bi-arrow-right-short'></i>"],
-      autoHeight: true, 
-      autoplayTimeout: 4000, 
-      autoplaySpeed: 400, 
-      autoplayHoverPause: true, 
-      navSpeed: 300, 
-      dotsSpeed: 300
-    }
+      loop: true,              // Disable infinite looping
+      rewind: false,             // Jump back to the first slide after the last
+      autoplay: true,           // Enable autoplay
+      autoplayTimeout: 4000,    // Delay between slides
+      autoplaySpeed: 600,       // Slide animation speed
+      autoplayHoverPause: true, // Pause on hover
+      nav: true,
+      dots: true,
+      navText: ["<i class='bi bi-arrow-left-short'></i>", "<i class='bi bi-arrow-right-short'></i>"],
+      autoHeight: true
+    };
 
     var $options = {
-      items: $carousel.data("owl-items"),
-      margin: $carousel.data("owl-margin"),
-      loop: $carousel.data("owl-loop"),
-      center: $carousel.data("owl-center"),
-      nav: $carousel.data("owl-nav"),
-      rewind: $carousel.data("owl-rewind"),
-      dots: $carousel.data("owl-dots"),
-      autoplay: $carousel.data("owl-autoplay")
-    }
+      items: $carousel.data("owl-items") || 1,
+      margin: $carousel.data("owl-margin") || 0,
+      center: $carousel.data("owl-center") || false,
+      dots: $carousel.data("owl-dots") || true,
+      nav: $carousel.data("owl-nav") || true,
+      rewind: true // this ensures jump from last to first
+    };
 
     var $responsive = {
       responsive: {
-        0 : {
-          items: $carousel.data("owl-xs")
-        },
-        576 : {
-          items: $carousel.data("owl-sm")
-        },
-        768 : {
-          items: $carousel.data("owl-md")
-        },
-        992 : {
-          items: $carousel.data("owl-lg")
-        },
-        1200 : {
-          items: $carousel.data("owl-xl")
-        }
+        0: { items: $carousel.data("owl-xs") || 1 },
+        576: { items: $carousel.data("owl-sm") || 1 },
+        768: { items: $carousel.data("owl-md") || 1 },
+        992: { items: $carousel.data("owl-lg") || 1 },
+        1200: { items: $carousel.data("owl-xl") || 1 }
       }
-    }
+    };
 
-    $carousel.owlCarousel( $.extend( $defaults, $options, $responsive) );
+    $carousel.owlCarousel($.extend($defaults, $options, $responsive));
   });
 }
+
 
 
 /*===============================================
