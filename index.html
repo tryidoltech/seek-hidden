@@ -349,40 +349,41 @@
 	
 					<!-- Right Column: Contact Us Form -->
 					<div class="col-12 col-lg-6">
-						<div class="contact-form bg-black bg-gradient p-4 p-lg-5 rounded-3 shadow" style="opacity: 0.5;"> <!-- Added white bg, padding, rounded corners and shadow -->
+						<div class="contact-form bg-black bg-gradient p-4 p-lg-5 rounded-3 shadow" style="opacity: 0.5;">
 							<form method="post" id="contactformHB" class="text-white">
 								<div class="row gx-3 gy-3">
 									<div class="col-12 col-sm-6">
 										<input type="text" id="firstName" name="firstName" placeholder="First Name" required 
-											class="form-control form-control-lg" /> <!-- Added larger form control -->
+											class="form-control form-control-lg" />
 									</div>
 									<div class="col-12 col-sm-6">
 										<input type="text" id="lastName" name="lastName" placeholder="Last Name" required 
 											class="form-control form-control-lg" />
 									</div>
 								</div>
-								<div class="row gx-3 gy-3 mt-3"> <!-- Increased margin top -->
+								<div class="row gx-3 gy-3 mt-3">
 									<div class="col-12 col-sm-6">
 										<input type="email" id="email" name="email" placeholder="Email" required 
 											class="form-control form-control-lg" />
 									</div>
 									<div class="col-12 col-sm-6">
-										<input type="tel" id="contactNumber" name="contactNumber" placeholder="Contact Number" required 
-											class="form-control form-control-lg" />
+										<input type="number" id="contactNumber" name="contactNumber" placeholder="Contact Number" required 
+											class="form-control form-control-lg" pattern="[0-9]{10,}" 
+											title="Please enter at least 10 digits" />
 									</div>
 								</div>
-								<div class="mt-4"> <!-- Increased margin top -->
+								<div class="mt-4">
 									<textarea name="message" id="message" placeholder="Your message..." rows="5" 
-										class="form-control form-control-lg" required></textarea> <!-- Larger textarea -->
+										class="form-control form-control-lg" required></textarea>
 								</div>
-								<div class="mt-4 text-center"> <!-- Centered button -->
-									<button class="button button-lg button-rounded button-primary" type="submit"> <!-- Changed to primary button -->
+								<div class="mt-4 text-center">
+									<button class="button button-lg button-rounded button-primary" type="submit">
 										Send Message
 									</button>
 								</div>
 							</form>
-							<div class="submit-result mt-4 text-center"> <!-- Centered messages -->
-								<div id="success" class="alert alert-success d-none"> <!-- Using Bootstrap alerts -->
+							<div class="submit-result mt-4 text-center">
+								<div id="success" class="alert alert-success d-none">
 									Thank you! Your Message has been sent.
 								</div>
 								<div id="error" class="alert alert-danger d-none">
@@ -391,6 +392,19 @@
 							</div>
 						</div>
 					</div>
+					
+					<script>
+					document.getElementById('contactformHB').addEventListener('submit', function(event) {
+						const contactNumber = document.getElementById('contactNumber').value;
+						const digitsOnly = contactNumber.replace(/\D/g, '');
+						
+						if (digitsOnly.length < 10) {
+							event.preventDefault();
+							alert('Please enter a valid contact number with at least 10 digits');
+							document.getElementById('contactNumber').focus();
+						}
+					});
+					</script>
 				</div>
 			</div>
 		</div>
