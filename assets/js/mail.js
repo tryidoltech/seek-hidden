@@ -44,7 +44,7 @@ window.onload = function () {
 
         event.preventDefault();
         
-        emailjs.sendForm('service_eoxo9hl', 'template_r4u2v2o', this)
+        emailjs.sendForm('service_rmar8z9', 'template_r4u2v2o', this)
             .then(() => {
                 // Show success message
                 document.getElementById("success").classList.remove("d-none");
