@@ -11050,8 +11050,9 @@ html {
 }
 
 
-#heeroimg{
+.heeroimg{
   display:fixed !important;
+  height: 700px !important;
 }
 
 
@@ -11063,12 +11064,11 @@ html {
 
 
 #head1{
-  height: 16% !important;
+  height: 30% !important;
 }
 
 /* #logo-img{
   height: 100vh !important;
   width: 35vh !important;
-  /* background-color: green; */
+  /* background-color: green; }*/
 
-} */
