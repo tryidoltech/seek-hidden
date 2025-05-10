@@ -11066,4 +11066,9 @@ html {
   height: 16% !important;
 }
 
+#logo-img{
+  height: 100vh !important;
+  width: 35vh !important;
+  /* background-color: green; */
 
+}
