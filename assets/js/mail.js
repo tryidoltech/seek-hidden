@@ -27,7 +27,7 @@
 // });
 
 (function () {
-    emailjs.init("0Vw-TqZ0bGCdT6eUm");
+    emailjs.init("GNUU32vb0lXj2aDCm");
 })();
 
 window.onload = function () {
@@ -44,7 +44,7 @@ window.onload = function () {
 
         event.preventDefault();
         
-        emailjs.sendForm('service_eoxo9hl', 'template_w93x8bv', this)
+        emailjs.sendForm('service_eoxo9hl', 'template_r4u2v2o', this)
             .then(() => {
                 // Show success message
                 document.getElementById("success").classList.remove("d-none");
