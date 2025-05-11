@@ -7101,6 +7101,7 @@ button.mfp-close:hover {
 
 .header .header-logo .logo-light {
   display: none;
+  
 }
 
 .header .header-logo * {
@@ -7757,6 +7758,7 @@ button.mfp-close:hover {
     left: -100%;
     overflow-y: auto;
     background: white;
+    z-index: 9999999;
     width: 300px;
     height: 100%;
     -webkit-box-shadow: 0 0 36px 0 rgba(22, 25, 28, 0.17);
